@@ -1,12 +1,13 @@
+// app/layout.tsx
 import type { Metadata } from "next";
-import { Radio_Canada} from "next/font/google";
+import { Radio_Canada } from "next/font/google";
 import "./globals.css";
+import PageReveal from "@/components/PageReveal";
 
 const radio = Radio_Canada({
   subsets: ["latin"],
   weight: ["400", "600"],
-})
-
+});
 
 export const metadata: Metadata = {
   title: "Danny's Portfolio",
@@ -18,13 +19,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-     <body className={`${radio.className} min-h-screen pl-0 pr-0 pt-12 pb-2 mx-10 flex justify-center sm:mx-24`}>
-        {children}
+      <body className={`${radio.className} min-h-screen bg-white`}>
+        <main className="mx-auto max-w-2xl px-6 py-16">
+          <PageReveal>{children}</PageReveal>
+        </main>
       </body>
     </html>
   );

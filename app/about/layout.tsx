@@ -1,28 +1,25 @@
-import type { Metadata } from "next";
-import { Radio_Canada} from "next/font/google";
-import "../globals.css";
+// app/about/layout.tsx
+import { Radio_Canada } from "next/font/google";
 
 const radio = Radio_Canada({
   subsets: ["latin"],
   weight: ["400", "600"],
-})
+});
 
-
-export const metadata: Metadata = {
-  title: "about",
-  description: "about section of my personal portfolio",
+// optional metadata stays fine
+export const metadata = {
+  title: "About — Danny Le",
+  description: "About section of Danny Le's portfolio",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function AboutLayout({ children }: { children: React.ReactNode }) {
+  // Keep this minimal — do NOT include <html> or <body> or import globals.css here.
+  // The root layout already centers the content. Use this wrapper only for local styling.
   return (
-    <html lang="en">
-      <body className={`${radio.className} min-h-screen pl-0 pr-0 pt-12 pb-2 mx-24 flex justify-center`}>
+    <div className={`${radio.className} w-full`}>
+      <div className="w-full">
         {children}
-      </body>
-    </html>
+      </div>
+    </div>
   );
 }
