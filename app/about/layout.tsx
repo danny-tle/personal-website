@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Radio_Canada} from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 
 const radio = Radio_Canada({
   subsets: ["latin"],
@@ -9,11 +9,8 @@ const radio = Radio_Canada({
 
 
 export const metadata: Metadata = {
-  title: "Danny's Portfolio",
-  description: "Danny's Personal Portfolio",
-  icons: {
-    icon: "/favicon.ico",
-  },
+  title: "about",
+  description: "about section of my personal portfolio",
 };
 
 export default function RootLayout({
@@ -23,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-     <body className={`${radio.className} min-h-screen pl-0 pr-0 pt-12 pb-2 mx-10 flex justify-center sm:mx-24`}>
+      <body className={`${radio.className} min-h-screen pl-0 pr-0 pt-12 pb-2 mx-24 flex justify-center`}>
         {children}
       </body>
     </html>
