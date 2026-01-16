@@ -94,8 +94,6 @@ export default function Home() {
   </div>
 </section>
 
-
-
       {/* Socials */}
       <footer className="pt-8 flex items-center gap-6">
         <a href="/MyResume.pdf" className="text-sm hover:underline">Resume</a>

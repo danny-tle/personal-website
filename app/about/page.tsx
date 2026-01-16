@@ -7,7 +7,7 @@ export default function AboutPage() {
   return (
     <div className="w-full flex justify-center">
       <div className="w-full max-w-2xl px-6 py-20 bg-white/0">
-        {/* Top row: name + navbar */}
+        {/* Navbar */}
         <div className="flex items-center justify-between mb-8">
           <h1 className="text-3xl md:text-4xl font-semibold tracking-tight">
             Danny Le
@@ -22,7 +22,7 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* Body paragraphs — smaller + indented */}
+        {/* Body */}
         <div className="space-y-6 text-slate-700">
           <p className="text-sm pl-4 leading-relaxed">
             I am currently a Computer Science major, aiming for my Mathematics minor at 
@@ -37,7 +37,7 @@ export default function AboutPage() {
             There is much more I have to learn. I am always looking for opportunities to 
             expand my skills and grow.{" "}
             <a
-              href="mailto:youremail@example.com"
+              href="mailto:dannyle4.contact@gmail.com"
               className="font-medium hover:underline"
             >
               You can connect with me at the following:
