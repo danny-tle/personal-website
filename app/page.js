@@ -91,6 +91,18 @@ export default function Home() {
         a model–view design for maintainability and extensibility.
       </p>
     </div>
+
+    {/* Personal Website */}
+    <div>
+      <p className="font-medium">Personal Website</p>
+      <p className="mt-1 text-slate-500">
+        Next.js, React, Tailwind CSS, TypeScript
+      </p>
+      <p className="mt-2 text-xs text-black leading-relaxed">
+        Developed a simple personal portfolio website using Next.js and Tailwind CSS to
+        showcase projects and experience.
+        </p>
+    </div>
   </div>
 </section>
 
