@@ -62,7 +62,6 @@ export default function Navbar() {
             alt="Download resume"
             className="w-5 h-5 transition-filter duration-150"
             style={{
-              // grayscale when not hovered; color when hovered/active
               filter:
                 hovered === "resume" || pathname === "/resume"
                   ? "none"
