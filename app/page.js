@@ -30,12 +30,11 @@ export default function Home() {
         <div className="space-y-6 text-sm text-slate-800">
           <div>
             <p>
-              Currently building a website for{" "}
+              Currently looking for  work/internships{" "}
               <a href="" className="underline">
-                Soup&Sip
               </a>
             </p>
-            <p className="text-slate-500">Fall 2025 — Next.js, JavaScript, Tailwind</p>
+            <p className="text-slate-500"> Interests— Frontend, Data Analysis, App Development</p>
           </div>
 
 
