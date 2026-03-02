@@ -15,3 +15,54 @@ body {
 .custom-text-18 {
     font-size: 18px;
 }
+
+/* ── Layout ── */
+@layer components {
+    .page-wrapper {
+        @apply w-full flex justify-center;
+    }
+
+    .page-container {
+        @apply w-full max-w-2xl px-6 py-20;
+    }
+
+    .page-header {
+        @apply flex items-center justify-between;
+    }
+
+    .page-title {
+        @apply text-3xl md:text-4xl font-semibold tracking-tight;
+    }
+
+    /* ── Sections ── */
+    .section-heading {
+        @apply text-sm font-semibold uppercase tracking-widest text-slate-500 mb-6;
+    }
+
+    .section-body {
+        @apply space-y-6 text-sm text-slate-800;
+    }
+
+    /* ── Projects ── */
+    .project-title {
+        @apply font-medium;
+    }
+
+    .project-tech {
+        @apply mt-1 text-slate-500;
+    }
+
+    .project-desc {
+        @apply mt-2 text-xs text-black leading-relaxed;
+    }
+
+    /* ── About page ── */
+    .body-text {
+        @apply text-sm pl-4 leading-relaxed;
+    }
+
+    /* ── Footer ── */
+    .footer-link {
+        @apply text-sm hover:underline;
+    }
+}

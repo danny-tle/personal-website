@@ -12,10 +12,10 @@ const radio = Radio_Canada({
 
 export default function Home() {
   return (
-  <div className="w-full flex justify-center">
-    <div className="w-full max-w-2xl px-6 py-20 bg-white/60">
-      <div className="flex items-center justify-between mb-12">
-          <h1 className="text-3xl md:text-4xl font-semibold tracking-tight">
+  <div className="page-wrapper">
+    <div className="page-container bg-white/60">
+      <div className="page-header mb-12">
+          <h1 className="page-title">
             Danny Le
           </h1>
             <Navbar />
@@ -23,11 +23,11 @@ export default function Home() {
 
       {/* WORK */}
       <section className="mb-14">
-        <h2 className="text-sm font-semibold uppercase tracking-widest text-slate-500 mb-6">
+        <h2 className="section-heading">
           Experience
         </h2>
 
-        <div className="space-y-6 text-sm text-slate-800">
+        <div className="section-body">
           <div>
             <p>
               Currently looking for  work/internships{" "}
@@ -43,18 +43,18 @@ export default function Home() {
 
 {/* PROJECTS */}
 <section className="mb-14">
-  <h2 className="text-sm font-semibold uppercase tracking-widest text-slate-500 mb-6">
+  <h2 className="section-heading">
     Personal Projects
   </h2>
 
-  <div className="space-y-8 text-sm text-slate-800">
+  <div className="section-body space-y-8">
     {/* Manual Driving Simulator */}
     <div>
-      <p className="font-medium">Manual Driving Simulator</p>
-      <p className="mt-1 text-slate-500">
+      <p className="project-title">Manual Driving Simulator</p>
+      <p className="project-tech">
         C++, Qt, Qt Creator
       </p>
-      <p className="mt-2 text-xs text-black leading-relaxed">
+      <p className="project-desc">
         Desktop-based driving simulator allowing real-time control of steering,
         acceleration, and braking. Implemented event-driven input handling using
         Qt’s signal–slot system and structured the application with a model–view
@@ -65,11 +65,11 @@ export default function Home() {
 
     {/* Snake Client & Score Server */}
     <div>
-      <p className="font-medium">Snake Client &amp; Score Server</p>
-      <p className="mt-1 text-slate-500">
+      <p className="project-title">Snake Client &amp; Score Server</p>
+      <p className="project-tech">
         C#, .NET, MVC, SQL Server, TCP/IP, HTTP
       </p>
-      <p className="mt-2 text-xs text-black leading-relaxed">
+      <p className="project-desc">
         Networked Snake game with a client–server architecture that records live
         game data to a SQL Server database. Built a lightweight HTTP server from
         scratch to render game history and statistics, applying MVC principles
@@ -79,11 +79,11 @@ export default function Home() {
 
     {/* Sprite Editor */}
     <div>
-      <p className="font-medium">Sprite Editor</p>
-      <p className="mt-1 text-slate-500">
+      <p className="project-title">Sprite Editor</p>
+      <p className="project-tech">
         C++, Qt, Qt Creator, qmake
       </p>
-      <p className="mt-2 text-xs text-black leading-relaxed">
+      <p className="project-desc">
         Desktop sprite editor supporting multi-layer editing, per-pixel drawing
         tools, onion skinning, and frame-based animation. Designed an event-driven
         GUI using Qt’s signal–slot architecture and structured the project with
@@ -93,11 +93,11 @@ export default function Home() {
 
     {/* Personal Website */}
     <div>
-      <p className="font-medium">Personal Website</p>
-      <p className="mt-1 text-slate-500">
+      <p className="project-title">Personal Website</p>
+      <p className="project-tech">
         Next.js, React, Tailwind CSS, TypeScript
       </p>
-      <p className="mt-2 text-xs text-black leading-relaxed">
+      <p className="project-desc">
         Developed a simple personal portfolio website using Next.js and Tailwind CSS to
         showcase projects and experience.
         </p>
@@ -107,9 +107,9 @@ export default function Home() {
 
       {/* Socials */}
       <footer className="pt-8 flex items-center gap-6">
-        <a href="/MyResume.pdf" className="text-sm hover:underline">Resume</a>
-        <a href="https://github.com/danny-tle" className="text-sm hover:underline">GitHub</a>
-        <a href="https://www.linkedin.com/in/dannyle4/" className="text-sm hover:underline">LinkedIn</a>
+        <a href="/MyResume.pdf" className="footer-link">Resume</a>
+        <a href="https://github.com/danny-tle" className="footer-link">GitHub</a>
+        <a href="https://www.linkedin.com/in/dannyle4/" className="footer-link">LinkedIn</a>
       </footer>
     </div>
   </div>
