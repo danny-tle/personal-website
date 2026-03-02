@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { Radio_Canada, Noto_Sans } from "next/font/google";
 import React, { useState, useEffect, useRef } from "react";
 import Navbar from "@/components/Navbar";
@@ -34,7 +33,7 @@ export default function Home() {
               <a href="" className="underline">
               </a>
             </p>
-            <p className="text-slate-500"> Interests— Frontend, Data Analysis, App Development</p>
+            <p className="text-slate-500"> Interests— Frontend, Backend, Data Analysis, App Development</p>
           </div>
 
 

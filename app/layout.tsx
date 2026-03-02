@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Radio_Canada } from "next/font/google";
 import "./globals.css";
-import PageReveal from "@/components/PageReveal";
+import Snow from "@/components/Rain";
 
 const radio = Radio_Canada({
   subsets: ["latin"],
@@ -24,8 +24,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${radio.className} min-h-screen bg-white`}>
-        <main className="mx-auto max-w-2xl px-6 py-16">
-          <PageReveal>{children}</PageReveal>
+        <Snow />
+        <main className="relative mx-auto max-w-2xl px-6 py-16" style={{ zIndex: 1 }}>
+          {children}
         </main>
       </body>
     </html>
