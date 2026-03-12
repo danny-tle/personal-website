@@ -29,14 +29,13 @@ export default function Home() {
         <div className="section-body">
           <div>
             <p>
-              Currently looking for  work/internships{" "}
-              <a href="" className="underline">
+              Student Ambassador @{" "}
+              <a href="https://adobe.ly/UofUtah" className="underline">
+                Adobe
               </a>
             </p>
-            <p className="text-slate-500"> Interests— Frontend, Backend, Data Analysis, App Development</p>
+            <p className="text-slate-500"> Spring 2026</p>
           </div>
-
-
         </div>
       </section>
 
