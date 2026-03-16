@@ -28,11 +28,12 @@ export default function RevealSection({ children, delay = 0 }: RevealSectionProp
 
   return (
     <div
-      className="transition-[opacity,transform,filter] duration-700 ease-out will-change-[opacity,transform,filter]"
       style={{
         opacity: visible ? 1 : 0,
         transform: visible ? "translateY(0)" : "translateY(12px)",
         filter: visible ? "blur(0px)" : "blur(8px)",
+        transition: "opacity 700ms ease-out, transform 700ms ease-out, filter 700ms ease-out",
+        willChange: "opacity, transform, filter",
       }}
     >
       {children}

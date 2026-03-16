@@ -21,10 +21,17 @@ export default function PageReveal({ children }: { children: React.ReactNode }) 
     return <div>{children}</div>;
   }
 
-  const base =
-    "transition-[opacity,transform,filter] duration-700 ease-out will-change-transform will-change-opacity will-change-filter";
-  const hidden = "opacity-0 -translate-y-3 blur-lg";
-  const visible = "opacity-100 translate-y-0 blur-0";
-
-  return <div className={`${base} ${mounted ? visible : hidden}`}>{children}</div>;
+  return (
+    <div
+      style={{
+        opacity: mounted ? 1 : 0,
+        transform: mounted ? "translateY(0)" : "translateY(-12px)",
+        filter: mounted ? "blur(0px)" : "blur(16px)",
+        transition: "opacity 700ms ease-out, transform 700ms ease-out, filter 700ms ease-out",
+        willChange: "opacity, transform, filter",
+      }}
+    >
+      {children}
+    </div>
+  );
 }
