@@ -36,7 +36,7 @@ export default function Home() {
           <div className="section-body">
             <div>
               <p>
-                Student Ambassador at {" "}
+                Student Ambassador for {" "}
                 <a href="https://adobe.ly/UofUtah" className="underline">
                   Adobe
                 </a>
