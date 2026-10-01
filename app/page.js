@@ -36,12 +36,20 @@ export default function Home() {
           <div className="section-body">
             <div>
               <p>
+                built the production marketing site and toast pos integration for Sapa Investment Group
+              </p>
+              <p className="text-slate-500">summer 2026 - next.js, react, vercel</p>
+            </div>
+
+            <div>
+              <p>
                 Student Ambassador for {" "}
                 <a href="https://adobe.ly/UofUtah" className="underline">
                   Adobe
                 </a>
+                {" "}at University of Utah
               </p>
-              <p className="text-slate-500"> Spring 2026</p>
+              <p className="text-slate-500">spring 2026 - adobe express</p>
             </div>
           </div>
         </section>
